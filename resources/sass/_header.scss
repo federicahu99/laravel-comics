@@ -1,0 +1,62 @@
+header {
+    #upper-header {
+        height: 23px;
+        background-color: dodgerblue;
+
+        #flex-upper-header {
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+                margin-left: 17px;
+                font-size: 13px;
+                
+                a {
+                    color: white;
+
+                    &:hover,
+                    &:active {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    
+    #bottom-header {
+        height: 100px;
+
+        .flex-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        figure {
+            width: 75px;
+            margin-top: 10px;
+        }
+
+        li {
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-left: 15px;
+            
+            &:hover {
+                color: dodgerblue;
+            }
+
+            a {
+                color: black;
+                font-weight: bold;
+
+                &:hover,
+                &:active{
+                    color:dodgerblue;
+                }
+            }
+        }
+
+
+    }
+}

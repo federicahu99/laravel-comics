@@ -19,14 +19,52 @@ a {
   text-decoration: none;
 }
 
+header #upper-header {
+  height: 23px;
+  background-color: dodgerblue;
+}
+header #upper-header #flex-upper-header {
+  display: flex;
+  justify-content: flex-end;
+}
+header #upper-header #flex-upper-header li {
+  margin-left: 17px;
+  font-size: 13px;
+}
+header #upper-header #flex-upper-header li a {
+  color: white;
+}
+header #upper-header #flex-upper-header li a:hover, header #upper-header #flex-upper-header li a:active {
+  color: black;
+}
+header #bottom-header {
+  height: 100px;
+}
+header #bottom-header .flex-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #bottom-header figure {
+  width: 75px;
+  margin-top: 10px;
+}
+header #bottom-header li {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 15px;
+}
+header #bottom-header li:hover {
+  color: dodgerblue;
+}
+header #bottom-header li a {
+  color: black;
+  font-weight: bold;
+}
+header #bottom-header li a:hover, header #bottom-header li a:active {
+  color: dodgerblue;
+}
+
 .container {
-  margin: 0 130px;
-}
-
-.container-small {
-  margin: 0 130px;
-}
-
-header {
-  background-color: aqua;
+  margin: 0 120px;
 }

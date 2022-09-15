@@ -1,8 +1,4 @@
-@import 'var.scss';
 @import 'generic.scss';
+@import '_header.scss';
 @import 'utils.scss';
 
-
-header {
-    background-color: aqua;
-}
