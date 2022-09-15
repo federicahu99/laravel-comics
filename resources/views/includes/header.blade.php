@@ -1,6 +1,5 @@
 <?php
 $links = config('header');
-
 ?>
 
 <header>

@@ -65,6 +65,12 @@ header #bottom-header li a:hover, header #bottom-header li a:active {
   color: dodgerblue;
 }
 
+#jumbotron {
+  height: 350px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
+
 .container {
   margin: 0 120px;
 }

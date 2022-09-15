@@ -10,6 +10,8 @@
 
     <!-- header -->
     @include('includes.header')
+    <!-- jumbotron -->
+    @include('includes.jumbotron')
     <!-- main -->
     @yield('content')
     <!-- footer -->
