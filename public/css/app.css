@@ -27,6 +27,13 @@ header #upper-header #flex-upper-header {
   display: flex;
   justify-content: flex-end;
 }
+header #upper-header #flex-upper-header .dc-link a {
+  color: white;
+  text-transform: uppercase;
+}
+header #upper-header #flex-upper-header .dc-link a:hover, header #upper-header #flex-upper-header .dc-link a:active {
+  color: black;
+}
 header #upper-header #flex-upper-header li {
   margin-left: 17px;
   font-size: 13px;
@@ -63,6 +70,14 @@ header #bottom-header li a {
 }
 header #bottom-header li a:hover, header #bottom-header li a:active {
   color: dodgerblue;
+}
+header #bottom-header input {
+  border: none;
+  transition: 0.5s;
+  padding: 7px;
+}
+header #bottom-header input:hover, header #bottom-header input:active {
+  border: 0.5 solid dodgerblue;
 }
 
 #jumbotron {

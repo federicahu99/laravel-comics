@@ -1,13 +1,15 @@
 <?php
 $links = config('header');
+$dc_links = config('header_upper');
 ?>
 
 <header>
 <!-- upper header -->
     <div id="upper-header">
         <ul id="flex-upper-header" class="container">
-           <li><a href="">DC POWER VISA</a></li>
-           <li><a href="">ADDITIONAL DC SITES</a></li>
+            @foreach($dc_links as $dc_link)
+                <li class="dc-link"><a href="">{{$dc_link['name']}}</a></li>
+            @endforeach
         </ul>
     </div>
 <!-- bottom header -->
@@ -20,7 +22,7 @@ $links = config('header');
             </figure>
             <ul class="flex-bottom">
                 @foreach($links as $link)
-                <li><a href="">{{$link['name']}}</a></li>
+                    <li><a href="">{{$link['name']}}</a></li>
                 @endforeach
             </ul>
             <div> 
