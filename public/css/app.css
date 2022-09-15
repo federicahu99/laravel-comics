@@ -86,6 +86,38 @@ header #bottom-header input:hover, header #bottom-header input:active {
   background-size: cover;
 }
 
+footer {
+  padding: 50px 0 0 0;
+  height: 430px;
+  background-image: url("../img/footer-bg.jpg");
+  color: white;
+}
+footer h2 {
+  margin: 20px 50px 10px 0;
+}
+footer a {
+  color: white;
+}
+footer a:hover, footer a:active {
+  color: dodgerblue;
+}
+footer ul {
+  margin-right: 50px;
+  list-style-type: none;
+}
+footer li {
+  list-style-type: none;
+  display: block;
+  width: 140px;
+}
+footer #flex-bottom {
+  display: flex;
+}
+footer figure img {
+  margin-left: 100px;
+  height: 75%;
+}
+
 .container {
   margin: 0 120px;
 }

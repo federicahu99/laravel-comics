@@ -6,7 +6,7 @@ return [
     ],
     [
         'name' => 'Shop DC Collectibles',
-        'url' => '/Shop DC Collectibles'
+        'url' => '/'
     ],
 
     ];

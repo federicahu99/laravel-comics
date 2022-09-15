@@ -34,7 +34,7 @@ return [
         'url' => '/Fans'
     ],
     [
-        'name' => 'NSews',
-        'url' => '/NSews'
+        'name' => 'News',
+        'url' => '/News'
     ],
     ];

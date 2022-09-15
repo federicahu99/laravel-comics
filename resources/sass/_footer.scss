@@ -1,0 +1,41 @@
+footer {
+    padding: 50px 0 0 0;
+    height: 430px;
+    background-image: url('../img/footer-bg.jpg');
+    color:white;
+
+    h2 {
+        margin: 20px 50px 10px 0;
+    }
+
+    a {
+        color: white;
+
+        &:hover,
+        &:active{
+            color: dodgerblue;
+        }
+    }
+    
+    ul {
+        margin-right: 50px;
+        list-style-type: none;
+    }
+
+    li {
+        list-style-type: none;
+        display: block;
+        width: 140px;
+    }
+    
+    #flex-bottom {
+        display: flex;
+        
+    }
+
+    figure img {
+        margin-left: 100px;
+        height: 75%;
+    }
+
+}
