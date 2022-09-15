@@ -1,5 +1,5 @@
 @extends('layouts.main')
 
 @section('content')
-<h1>Home Page</h1>
+<h1>Fans not found</h1>
 @endsection
