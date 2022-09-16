@@ -1,5 +1,5 @@
 @extends('layouts.main')
 
 @section('content')
-<h1>shop not found</h1>
+<h1>Shop content not found</h1>
 @endsection
