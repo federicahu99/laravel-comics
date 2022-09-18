@@ -13,18 +13,16 @@ $comics = config('comics');
                 <h2>Current series</h2>
             </div>
         </div>
-    </div>
-</div>
         @endsection
         <div class="cards">
             @foreach($comics as $comic)
                     <div class="comic-container">
-                        <a href="">
+                        <a href=" {{ route('products.show') }} ">
                             <img src="{{ $comic['thumb'] }}" alt=" {{ $comic['series']}} ">
                         </a>
                         <h4>{{ $comic['series']}}</h4>
                     </div>
-                    @endforeach
+            @endforeach
         </div>
     </div>
 </div>
