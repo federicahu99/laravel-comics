@@ -45,8 +45,12 @@ header {
         }
 
         figure {
-            width: 75px;
+            width: 90px;
             margin-top: 10px;
+
+            img {
+                width: 90%;
+            }
         }
 
         li {

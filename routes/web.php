@@ -22,8 +22,8 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
-})->name('comics');
+    return view('products.index');
+})->name('products.index');
 
 Route::get('/movies', function () {
     return view('movies');
@@ -65,5 +65,5 @@ Route::get('/shop', function () {
  Route::get('/comic', function() {
      $comics = config('comics');
      $comic = $comics[0];
-     return view('comic', compact('comic'));
-});
+     return view('products.show', compact('comic'));
+})->name('products.show');

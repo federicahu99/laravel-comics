@@ -22,7 +22,9 @@ $dc_links = config('header_upper');
             </figure>
             <ul class="flex-bottom">
                 @foreach($links as $link)
-                    <li><a href="{{ $link['url']}} ">{{ $link['name'] }}</a></li>
+                    <li>
+                        <a href="{{ route($link['url']) }} ">{{ $link['name'] }}</a>
+                    </li>
                 @endforeach
             </ul>
             <div> 
