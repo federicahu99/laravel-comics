@@ -61,9 +61,9 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
-// pagina fumetto singolo dinamico
-// Route::get('/comic', function() {
-//     $comics = config('comics')
-//     $single_comic = $comics[0];
-//     return view('comic', compact($single_comic))
-// })
+// // pagina fumetto singolo dinamico
+ Route::get('/comic', function() {
+     $comics = config('comics');
+     $comic = $comics[0];
+     return view('comic', compact('comic'));
+});
