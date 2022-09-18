@@ -14,6 +14,7 @@
     <!-- jumbotron -->
     @include('includes.jumbotron')
     <!-- main -->
+    @yield('title')
     @yield('content')
     <!-- footer -->
     @include('includes.footer')

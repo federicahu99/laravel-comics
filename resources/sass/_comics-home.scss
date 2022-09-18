@@ -2,32 +2,33 @@
     background-color: #1f1f1f;
     color: white;
 
-    h2{
-        padding: 50px 0;
-        display: inline-block;
-        padding: 10px;
-        color: white;
-        background-color: dodgerblue;
-        margin-top: -30px;
-    }
-
     .cards {
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        img {
-            width: 230px;
-            height: 200px;
-        }
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       
-        .comic-container {
-          flex-basis: calc(100% / 6 - 20px);
+      img {
+       max-width: 80%;
+       max-height: 80%;
+      }
+      
+      .comic-container {
+        flex-basis: calc(100% / 6 - 20px);
           margin-bottom: 50px;
           
         }
       }
-}
-
-
+    }
+    
+    
+    #title {
+      background-color: #1f1f1f;
+      h2{
+          display: inline-block;
+          padding: 10px;
+          color: white;
+          background-color: dodgerblue;
+          margin-top: -30px;
+      }
+    }

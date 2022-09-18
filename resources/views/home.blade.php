@@ -7,7 +7,13 @@ $comics = config('comics');
 @section('content')
 <div id="comics-home">
     <div class="container">
-        <h2>Current series</h2>
+        @section('title')
+        <div id="title">
+        <div class="container">
+                <h2>Current series</h2>
+            </div>
+        </div>
+        @endsection
         <div class="cards">
             @foreach($comics as $comic)
                     <div class="comic-container">

@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    
     return view('home');
 })->name('home');
 
@@ -61,3 +60,10 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
+
+// pagina fumetto singolo dinamico
+// Route::get('/comic', function() {
+//     $comics = config('comics')
+//     $single_comic = $comics[0];
+//     return view('comic', compact($single_comic))
+// })
