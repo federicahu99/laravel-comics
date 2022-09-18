@@ -62,14 +62,13 @@ Route::get('/shop', function () {
 })->name('shop');
 
 // // pagina fumetto singolo dinamico
- Route::get('/comic/{id}', function($id) {
-     $comics = config('comics');
-     
+Route::get('/comic/{id}', function($id) {
+    $comics = config('comics');
     
-     if(!is_numeric($id) || $id < 0 || $id >= count($comics)) {
-        abort(404);
-     }
-     
-     $comic = $comics[$id];
-     return view('products.show', compact('comic'));
+    if(!is_numeric($id) || $id < 0 || $id >= count($comics)) {
+       abort(404);
+    }
+    
+    $comic = $comics[$id];
+    return view('products.show', compact('comic'));
 })->name('products.show');

@@ -8,7 +8,7 @@ $comics = config('comics');
 <div id="comics-home">
     <div class="container">
         @section('title')
-        <div id="title">
+        <div class="title">
             <div class="container">
                 <h2>Current series</h2>
             </div>
@@ -17,7 +17,7 @@ $comics = config('comics');
         <div class="cards">
             @foreach($comics as $comic)
                     <div class="comic-container">
-                        <a href=" {{ route('products.show') }} ">
+                        <a href=" {{ route('products.show' , ['id' => $loop->index ]) }} ">
                             <img src="{{ $comic['thumb'] }}" alt=" {{ $comic['series']}} ">
                         </a>
                         <h4>{{ $comic['series']}}</h4>
